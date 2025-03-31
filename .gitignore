@@ -1,2 +1,3 @@
 # ignore all mac files
 .DS_Store 
+._*
