@@ -1,5 +1,7 @@
 # Final Project: Emotion Classification
 
+## Update: in my own personal repository, I have changed the model to RoBERTa distilled. I have all the training code set up to augment data to account for emotions that are less frequent, and I will train it on the full dataset next.
+
 I have completely changed up my final project idea. I will now be using another dataset from HuggingFace to clasify emotions from a piece of text--there just was not enough to analyze with my previous project.
 
 This new project is branched off from my personal project, where I am fine tuning an LLM to detect emotions using BERT. I have adapted my project for this final.
@@ -12,7 +14,7 @@ The classification of emotions from text data provided by the GoEmotions dataset
 
 1.  **Fine-tuned BERT (Bidirectional Encoder Representations from Transformers):**
 
-    - BERT is a large pre-trained transformer model that excels at understanding text context. I use the `bert-base-uncased` model and fine-tune it on the GoEmotions dataset by adding a classification head (layer with **sigmoid** activation for multi-label). Transformer models can capture complex semantic relationships in text, and fine-tuning allows leveraging the knowledge learned during pre-training and adapting it to the emotion domain.
+    - BERT is a large pre-trained transformer model that excels at understanding text context. I use the `bert-base-uncased` model and fine-tune it on the GoEmotions dataset by adding a classification head (layer with sigmoid activation for multi-label). Transformer models can capture complex semantic relationships in text, and fine-tuning allows leveraging the knowledge learned during pre-training and adapting it to the emotion domain.
 
 2.  **Logistic Regression with One-vs-Rest (OvR):**
 
